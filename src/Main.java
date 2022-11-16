@@ -26,6 +26,21 @@ public class Main {
 
         EmployeeManager employeeManager = new EmployeeManager();
         CustomerManager customerManager = new CustomerManager();
+        //Inheritence Demo
+        OgretmenKrediManager ogretmenKrediManager = new OgretmenKrediManager();
+        ogretmenKrediManager.Hesapla();
+
+        KrediUI krediUI = new KrediUI();
+        krediUI.KrediHesapla(ogretmenKrediManager);
+        krediUI.KrediHesapla(new AskerKrediManager());
+        //Polimorfizm
+        BaseLogger[] loggers = new BaseLogger[]{new EmailLogger(),new FileLogger(),new DatabaseLogger(),new ConsoleLogger()};
+        for (BaseLogger log:loggers){
+            log.Logger("Log Mesajı");
+        }
+        CustomerManager customerManager1 = new CustomerManager(new ConsoleLogger());
+        customerManager1.Add();
+
 
 
 
