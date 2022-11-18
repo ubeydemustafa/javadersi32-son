@@ -9,8 +9,8 @@ public class CustomerManager extends PersonManager{
     }
 
     @Override
-    public void Add() {
+    public void add() {
         System.out.println("Müşteri eklendi.");
-        this.baseLogger.Logger("kayıt oluşturuldu.");
+        this.baseLogger.logger("kayıt oluşturuldu.");
     }
 }

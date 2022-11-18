@@ -1,6 +1,6 @@
 public class DatabaseLogger extends BaseLogger{
     @Override
-    public void Logger(String message) {
+    public void logger(String message) {
         System.out.println("Database'e loglandı: "+ message);
     }
 }

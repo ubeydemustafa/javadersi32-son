@@ -3,7 +3,7 @@ public class PersonManager {
         System.out.println("Müşteri listelendi.");
     }
 
-    public void Add(){
+    public void add(){
         System.out.println("Müşteri eklendi.");
     }
 }

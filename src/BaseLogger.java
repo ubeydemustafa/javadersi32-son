@@ -1,5 +1,5 @@
 public class BaseLogger {
-    public void Logger(String message){
+    public void logger(String message){
         System.out.println("veri tabanına loglandı: "+ message);
     }
 }

@@ -12,7 +12,7 @@ public class Main {
 
 
         ProductManager productManager = new ProductManager();
-        productManager.Add(product);
+        productManager.add(product);
 
 
         //Overloading
@@ -36,10 +36,10 @@ public class Main {
         //Polimorfizm
         BaseLogger[] loggers = new BaseLogger[]{new EmailLogger(),new FileLogger(),new DatabaseLogger(),new ConsoleLogger()};
         for (BaseLogger log:loggers){
-            log.Logger("Log Mesajı");
+            log.logger("Log Mesajı");
         }
         CustomerManager customerManager1 = new CustomerManager(new ConsoleLogger());
-        customerManager1.Add();
+        customerManager1.add();
 
 
 
