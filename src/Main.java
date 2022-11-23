@@ -28,7 +28,7 @@ public class Main {
         CustomerManager customerManager = new CustomerManager();
         //Inheritence Demo
         OgretmenKrediManager ogretmenKrediManager = new OgretmenKrediManager();
-        ogretmenKrediManager.Hesapla();
+        ogretmenKrediManager.hesapla();
 
         KrediUI krediUI = new KrediUI();
         krediUI.KrediHesapla(ogretmenKrediManager);
@@ -40,8 +40,21 @@ public class Main {
         }
         CustomerManager customerManager1 = new CustomerManager(new ConsoleLogger());
         customerManager1.add();
+        System.out.println("                                                                 ");
 
+        //Overriding
+        BaseKrediManager[] krediManagers = new BaseKrediManager[]{new AskerKrediManager(),new OgretmenKrediManager(),new TarimKrediManager()};
+        for (BaseKrediManager krediManager: krediManagers) {
+            krediManager.hesapla(1000);
 
+        }
+
+        //Abstract
+        WomenGameCalculator womenGameCalculator = new WomenGameCalculator();
+        womenGameCalculator.hesapla();
+        womenGameCalculator.gameOver();
+
+        GameCalculator[] gameCalculator = new GameCalculator[]{new ManGameCalculator()};
 
 
     }
