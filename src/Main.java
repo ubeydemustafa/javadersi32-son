@@ -57,5 +57,8 @@ public class Main {
         GameCalculator[] gameCalculator = new GameCalculator[]{new ManGameCalculator()};
 
 
+        //Buraya kadar ödev çok uzadı, çok fazla class var o nedenle yeni bir repo açıyorum.
+
+
     }
 }
